@@ -2,46 +2,43 @@
 
 project-root/
 │
-├── index.html
+├── index.html                    ← Página principal (home)
+├── editor.html                   ← Editor de carátulas (formulario + previsualización + guardar + compartir)
+│
+├── src/
+│   ├── scss/
+│   │   ├── main.css              ← SCSS principal (compilado)
+│   │   ├── core/
+│   │   │   ├── reset.scss
+│   │   │   └── variables.scss
+│   │   └── functions/
+│   │       ├── home.scss
+│   │       ├── editor.scss
+│   │       ├── input-title.scss
+│   │       ├── select-theme.scss
+│   │       ├── select-platform.scss
+│   │       ├── input-age.scss
+│   │       ├── save-button.scss
+│   │       └── share-section.scss
+│   │
+│   ├── js/
+│   │   ├── main.js               ← JS principal: aquí importaremos los partials de js y pondremos todos los eventos
+│   │   └── functions/
+│   │       ├── home-button.js
+│   │       ├── input-title.js
+│   │       ├── select-theme.js
+│   │       ├── select-platform.js
+│   │       ├── input-age.js
+│   │       ├── save-button.js
+│   │       └── share-section.js
+│
 ├── vite.config.js
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
 ├── .eslintrc.json
 ├── LICENSE
-├── README.md
-│
-└── 📁src/
-    ├── 📁partials/
-    │   ├── home.html
-    │   └── editor.html
-    │
-    ├── 📁scss/
-    │   ├── main.scss
-    │   ├── 📁core/
-    │   │   ├── reset.scss
-    │   │   └── variables.scss
-    │   └── 📁functions/
-    │       ├── home.scss
-    │       ├── editor.scss
-    │       ├── input-title.scss
-    │       ├── select-theme.scss
-    │       ├── select-platform.scss
-    │       ├── input-age.scss
-    │       ├── save-button.scss
-    │       └── share-section.scss
-    │
-    ├── 📁js/
-    │   ├── main.js
-    │   └── 📁functions/
-    │       ├── home-button.js
-    │       ├── input-title.js
-    │       ├── select-theme.js
-    │       ├── select-platform.js
-    │       ├── input-age.js
-    │       ├── save-button.js
-    │       └── share-section.js
-
+└── README.md
 
 
 🧩 **Cómo se carga todo**
