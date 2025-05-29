@@ -2,11 +2,11 @@
 
 1. Botón de la página de inicio que redirige a la ventana de edición
 2. Seleccionar fondo prediseñado o subir una imagen propia
-3. Elegir una temática que personalice la tipografía de la carátula (y el fondo si se ha elegido prediseñado)
+3. Elegir temática que personalice la tipografía de la carátula (y el fondo si se ha elegido prediseñado)
 4. Escribir un título
 5. Opcional: escribir un subtítulo
 6. Seleccionar la plataforma del videojuego
-7. Seleccionar la edad recomendada de los jugadores
+7. Escribir la edad recomendada de los jugadores
 8. Seleccionar el logo de la compañía de videojuegos
 9. Botón para guardar la carátula
 10. Botones para compartirla en redes sociales 
