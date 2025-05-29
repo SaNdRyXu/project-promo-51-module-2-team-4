@@ -32,7 +32,7 @@ const inputFilesList = {
 
 export default defineConfig({
   base: "./",
-  root: "src",
+  root: "./",
   publicDir: "../public",
   build: {
     minify: "esbuild",
@@ -40,7 +40,7 @@ export default defineConfig({
     sourcemap: "inline",
     emptyOutDir: true,
     rollupOptions: {
-      input: inputFilesList,
+      input: 'index.html',
       output: {
         sourcemap: true,
         entryFileNames: ({name}) => {
@@ -55,7 +55,7 @@ export default defineConfig({
     },
   },
   server: {
-    open: "/index.html",
+    open: "../index.html",
     watch: {
       usePolling: true
     }
