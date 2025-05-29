@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <form action="">
+        <label for="background-choice">Fondo de carátula:</label>
+          <select id="background-choice" name="background-choice">
+            <option value="" disabled selected>Elige la temática</option>
+            <option value="preset">Prediseñado</option>
+            <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen -->
+          </select>
+          <!-- Input oculto para subir imagen -->
+          <div id="custom-image-upload" class="hidden">
+            <label>Sube tu imagen:</label>
+            <input type="file" id="custom-image" name="custom-image" accept="image/*" />
+          </div>
+
+
+
+        <h2>Elige la temática que más te guste</h2>
+
+            <label><input type="radio" name="theme">Simulacion </label>
+            <label><input type="radio" name="theme">Acción </label>
+            <label><input type="radio" name="theme">Fantasía </label>
+            <label><input type="radio" name="theme">Terror </label>
+
+        <h2>Título</h2>
+            <input type="text" id="title" name="title" placeholder="Escribe el título aquí">
+    
+        <h2>Subtítulo</h2>
+            <input type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
+
+        <h2>Plataforma</h2>
+            <label><input type="radio" name="platform">PS5 </label>
+            <label><input type="radio" name="platform">PC </label>
+            <label><input type="radio" name="platform">Xbox </label>
+            <label><input type="radio" name="platform">Nintendo Switch </label>
+
+        <h2>Edad</h2>
+            <label for="age">Recomendada (PEGI):</label>
+            <input type="number" id="age" name="age" min="3" max="18" step="1" required />
+    
+        <h2>Compañia</h2>
+
+            <select id="company" name="company">
+            <option value="" disabled selected>Elije empresa</option>
+            <option value="ea">Electronic Arts (EA)</option>
+            <option value="ubisoft">Ubisoft</option>
+            <option value="sony">Sony Interactive</option>
+            <option value="nintendo">Nintendo</option>
+            <option value="bethesda">Bethesda</option>
+            <option value="activision">Activision</option>
+            <option value="independent">Independent</option>
+            </select>
+
+        <div>
+            
+            <button type="submit" id="save-button">Guarda la carátula</button>
+        </div>
+
+    </form>   
+    <div>
+        <h2>Comparte</h2>
+        <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i>Twitch</a>
+        <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i>Youtube</a>
+        <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i>Discord</a>
+        <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #171A21;"></i>Steam</a>
+        <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>LinkedIn</a>
+    </div>
+    <section>
+        <div>
+            <h2>Sin título</h2>
+            <h3>Subtitulo</h3>
+            <img src="" alt="Aqui ira la imagen de la plataforma">
+            <p>Aqui va la edad</p>
+            <img src="" alt="Aqui ira la imagen de la compañia">
+        </div>
+    </section>
+      
+
+</body>
+</html>
