@@ -8,9 +8,9 @@
 
 </head>
 <body>
-
+    <!-- 2_predesigned-or-submit VANESSA --> 
     <form action="">
-        <label for="background-choice">Fondo de carátula:</label>
+        <label class="background-choice">Fondo de carátula:</label>
           <select id="background-choice" name="background-choice">
             <option value="" disabled selected>Elige la temática</option>
             <option value="preset">Prediseñado</option>
@@ -21,32 +21,39 @@
             <label>Sube tu imagen:</label>
             <input type="file" id="custom-image" name="custom-image" accept="image/*" />
           </div>
-
-
-
+            <!-- 2_predesigned-or-submit -->
+         
+         <!-- 3_select-theme CLAUDIA-->
         <h2>Elige la temática que más te guste</h2>
 
             <label><input type="radio" name="theme">Simulacion </label>
             <label><input type="radio" name="theme">Acción </label>
             <label><input type="radio" name="theme">Fantasía </label>
             <label><input type="radio" name="theme">Terror </label>
-
+          <!-- 3_select-theme -->
+        <!-- 4_input-title CLAUDIA -->
         <h2>Título</h2>
             <input type="text" id="title" name="title" placeholder="Escribe el título aquí">
-    
+        <!-- 4_input-title CLAUDIA -->
+
+        <!-- 5_input-subtitle CLAUDIA -->
         <h2>Subtítulo</h2>
             <input type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
-
+        <!-- 5_input-subtitle CLAUDIA -->
+        <!-- 6_select-platform SANDRA -->
         <h2>Plataforma</h2>
             <label><input type="radio" name="platform">PS5 </label>
             <label><input type="radio" name="platform">PC </label>
             <label><input type="radio" name="platform">Xbox </label>
             <label><input type="radio" name="platform">Nintendo Switch </label>
-
+        <!-- 6_select-platform SANDRA -->
+        <!--  7_input-age VANESSA -->
         <h2>Edad</h2>
             <label for="age">Recomendada (PEGI):</label>
             <input type="number" id="age" name="age" min="3" max="18" step="1" required />
-    
+        <!--  7_input-age VANESSA -->
+          
+        <!-- 8_select-company-logo YOLANDA -->
         <h2>Compañia</h2>
 
             <select id="company" name="company">
@@ -59,13 +66,14 @@
             <option value="activision">Activision</option>
             <option value="independent">Independent</option>
             </select>
-
-        <div>
-            
-            <button type="submit" id="save-button">Guarda la carátula</button>
+        <!-- 8_select-company-logo YOLANDA -->
+        
+        <div>            
+            <button class="js-9_save-button" type="submit" id="save-button">Guarda la carátula</button>
         </div>
 
-    </form>   
+    </form>  
+     <!-- 10_share-section YOLANDA -->
     <div>
         <h2>Comparte</h2>
         <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i>Twitch</a>
@@ -74,16 +82,18 @@
         <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #171A21;"></i>Steam</a>
         <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>LinkedIn</a>
     </div>
+    <!-- 10_share-section YOLANDA -->
+    <!-- editor_page YOLANDA -->
     <section>
         <div>
             <h2>Sin título</h2>
-            <h3>Subtitulo</h3>
-            <img src="" alt="Aqui ira la imagen de la plataforma">
-            <p>Aqui va la edad</p>
-            <img src="" alt="Aqui ira la imagen de la compañia">
+            <h3>Sin subtitulo</h3>
+            <img src="" alt="Aqui ira la imagen de la plataforma PS5 predefinida">
+            <p>Aqui va la edad mínima siempre requerida</p>
+            <img src="" alt="Aqui ira la imagen de la compañia siempre electronics arts por defecto">
         </div>
     </section>
-      
+    <!-- editor_page YOLANDA -->
 
 </body>
 </html>

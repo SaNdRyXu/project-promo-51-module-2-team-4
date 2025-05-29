@@ -1,7 +1,13 @@
 @use 'core/reset';
-@use 'components/code';
-@use 'components/links';
-@use 'layout/page';
-@use 'layout/header';
-@use 'layout/footer';
-@use 'pages/index';
+@use 'functions/1_home_page';
+@use 'functions/2_predesigned-or-submit-image';
+@use 'functions/3_select-theme';
+@use 'functions/4_input-title';
+@use 'functions/5_input-subtitle';
+@use 'functions/6_select-platform';
+@use 'functions/7_input-age';
+@use 'functions/8_select-company-logo';
+@use 'functions/9_save-button';
+@use 'functions/10_share-section';
+@use 'functions/editor_page';
+
