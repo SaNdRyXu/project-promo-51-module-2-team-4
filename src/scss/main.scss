@@ -1,13 +1,13 @@
 @use 'core/reset';
-@use 'functions/1_home_page';
-@use 'functions/2_predesigned-or-submit-image';
-@use 'functions/3_select-theme';
-@use 'functions/4_input-title';
-@use 'functions/5_input-subtitle';
-@use 'functions/6_select-platform';
-@use 'functions/7_input-age';
-@use 'functions/8_select-company-logo';
-@use 'functions/9_save-button';
-@use 'functions/10_share-section';
+@use 'functions/home_page';
+@use 'functions/predesigned-or-submit-image';
+@use 'functions/select-theme';
+@use 'functions/input-title';
+@use 'functions/input-subtitle';
+@use 'functions/select-platform';
+@use 'functions/input-age';
+@use 'functions/select-company-logo';
+@use 'functions/save-button';
+@use 'functions/share-section';
 @use 'functions/editor_page';
 
