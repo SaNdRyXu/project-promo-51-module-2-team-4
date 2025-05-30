@@ -2,33 +2,70 @@
     box-sizing: border-box;
     outline: 1px solid line;
 }
-
 html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-
 }
-
 .main {
     display: flex;
     width: 80vw;
     justify-content: center;
     margin: 0 auto;
-
 }
-
 .left-column {
     width: 50%;
-
 }
-
 .right-column {
  width: 30%;
-
 }
 
 
+/* PREVIEW COVER  */
 
-/* PREVIEW COVER */
+.preview-cover {
+  width: 500px;
+  height: 500px; /* 1:1 ratio */
+  background-size: contain;       
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  text-align: left;
+}
+
+.cover-line {
+    border: none;
+    height: 1.3px; /* Grosor mínimo */
+    background-color: white; /* Color blanco */
+    width: 100%; /* O el ancho que prefieras */
+}
+.preview-top {
+  /* background-color: #020f82; */
+  background: linear-gradient(to right, #020f82, #3a53f0);
+  padding: 0.5rem;
+  height: 50px; 
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.preview-top img {
+  height: 100%; 
+  object-fit: contain;
+}
+.preview-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 

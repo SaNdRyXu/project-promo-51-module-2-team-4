@@ -4,105 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=MedievalSharp&family=Patrick+Hand&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=MedievalSharp&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="/src/scss/functions/editor_page.scss" />
+    <link rel="stylesheet" href="/src/scss/main.scss" />
+    <script type="module" src="/src/js/main.js"></script>
 
 </head>
 <body>
 <main class="main"> 
-<div class="left-column">
-    <!-- 2_predesigned-or-submit VANESSA --> 
-    <form action="">
-        <label class="background-choice">Fondo de carátula:</label>
-          <select id="background-choice" name="background-choice">
-            <option value="" disabled selected>Elige la temática</option>
-            <option value="preset">Prediseñado</option>
-            <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen -->
-          </select>
-          <!-- Input oculto para subir imagen -->
-          <div id="custom-image-upload" class="hidden">
-            <label>Sube tu imagen:</label>
-            <input type="file" id="custom-image" name="custom-image" accept="image/*" />
-          </div>
-            <!-- 2_predesigned-or-submit -->
-         
-         <!-- 3_select-theme CLAUDIA-->
-        <h2>Elige la temática que más te guste</h2>
+    <div class="left-column">
+        <!-- 2_predesigned-or-submit VANESSA --> 
+        <form action="">
+            <label class="background-choice">Fondo de carátula:</label>
+            <select id="background-choice" name="background-choice">
+                <!-- <option value="" disabled selected>Elige la temática</option> -->
+                <option value="preset" selected>Prediseñado</option>
+                <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen -->
+            </select>
+            <!-- Input oculto para subir imagen -->
+            <div id="custom-image-upload" class="hidden">
+                <label>Sube tu imagen:</label>
+                <input type="file" id="custom-image" name="custom-image" accept="image/*" />
+            </div>
+                <!-- 2_predesigned-or-submit -->
+            
+            <!-- 3_select-theme CLAUDIA-->
+            <h2>Elige la temática que más te guste</h2>
 
-            <label><input type="radio" name="theme">Simulacion </label>
-            <label><input type="radio" name="theme">Acción </label>
-            <label><input type="radio" name="theme">Fantasía </label>
-            <label><input type="radio" name="theme">Terror </label>
-          <!-- 3_select-theme -->
-        <!-- 4_input-title CLAUDIA -->
-        <h2>Título</h2>
-            <input type="text" id="title" name="title" placeholder="Escribe el título aquí">
-        <!-- 4_input-title CLAUDIA -->
+                <label><input type="radio" name="theme" value="Fantasía" checked>Fantasía </label>    
+                <label><input type="radio" name="theme" value="Terror">Terror </label>
+                <label><input type="radio" name="theme" value="Simulación">Simulación </label>
+                <label><input type="radio" name="theme" value="Acción">Acción </label>
+            <!-- 3_select-theme -->
+            <!-- 4_input-title CLAUDIA -->
+            <h2>Título</h2>
+                <input type="text" id="title" name="title" placeholder="Escribe el título aquí">
+            <!-- 4_input-title CLAUDIA -->
 
-        <!-- 5_input-subtitle CLAUDIA -->
-        <h2>Subtítulo</h2>
-            <input type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
-        <!-- 5_input-subtitle CLAUDIA -->
-        <!-- 6_select-platform SANDRA -->
-        <h2>Plataforma</h2>
-            <label><input type="radio" name="platform">PS5 </label>
-            <label><input type="radio" name="platform">PC </label>
-            <label><input type="radio" name="platform">Xbox </label>
-            <label><input type="radio" name="platform">Nintendo Switch </label>
-        <!-- 6_select-platform SANDRA -->
-        <!--  7_input-age VANESSA -->
-        <h2>Edad</h2>
-            <label for="age">Recomendada (PEGI):</label>
-            <input type="number" id="age" name="age" min="3" max="18" step="1" required />
-        <!--  7_input-age VANESSA -->
-          
-        <!-- 8_select-company-logo YOLANDA -->
-        <h2>Compañia</h2>
+            <!-- 5_input-subtitle CLAUDIA -->
+            <h2>Subtítulo</h2>
+                <input type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
+            <!-- 5_input-subtitle CLAUDIA -->
+            <!-- 6_select-platform SANDRA -->
+            <h2>Plataforma</h2>
+                <label><input type="radio" name="platform" value="PS5" checked>PS5 </label>
+                <label><input type="radio" name="platform" value="PC">PC </label>
+                <label><input type="radio" name="platform" value="Xbox">Xbox </label>
+                <label><input type="radio" name="platform" value="Nintendo Switch">Nintendo Switch </label>
+            <!-- 6_select-platform SANDRA -->
+            <!--  7_input-age VANESSA -->
+            <h2>Edad</h2>
+                <label for="age">Recomendada (PEGI):</label>
+                <input type="number" id="age" name="age" min="3" max="18" step="1" value="7" required />
+            <!--  7_input-age VANESSA -->
+            
+            <!-- 8_select-company-logo YOLANDA -->
+            <h2>Compañía</h2>
 
             <select id="company" name="company">
-            <option value="" disabled selected>Elije empresa</option>
-            <option value="ea">Electronic Arts (EA)</option>
-            <option value="ubisoft">Ubisoft</option>
-            <option value="sony">Sony Interactive</option>
-            <option value="nintendo">Nintendo</option>
-            <option value="bethesda">Bethesda</option>
-            <option value="activision">Activision</option>
-            <option value="independent">Independent</option>
+                <option value="ea" selected>Electronic Arts (EA)</option>
+                <option value="ubisoft">Ubisoft</option>
+                <option value="sony">Sony Interactive</option>
+                <option value="nintendo">Nintendo</option>
+                <option value="bethesda">Bethesda</option>
+                <option value="activision">Activision</option>
+                <option value="independent">Independent</option>
             </select>
-        <!-- 8_select-company-logo YOLANDA -->
-        
-        <div>            
-            <button class="js-9_save-button" type="submit" id="save-button">Guarda la carátula</button>
-        </div>
+            <!-- 8_select-company-logo YOLANDA -->
+            
+            <div>            
+                <button class="js-9_save-button" type="submit" id="save-button">Guarda la carátula</button>
+            </div>
 
-    </form>  
-     <!-- 10_share-section YOLANDA -->
-    <div>
-        <h2>Comparte</h2>
-        <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i>Twitch</a>
-        <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i>Youtube</a>
-        <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i>Discord</a>
-        <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #171A21;"></i>Steam</a>
-        <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>LinkedIn</a>
+        </form>  
+        <!-- 10_share-section YOLANDA -->
+        <div>
+            <h2>Comparte</h2>
+            <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i>Twitch</a>
+            <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i>Youtube</a>
+            <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i>Discord</a>
+            <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #171A21;"></i>Steam</a>
+            <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>LinkedIn</a>
+        </div>
+        <!-- 10_share-section YOLANDA -->
+        <!-- editor_page YOLANDA -->   
     </div>
-    <!-- 10_share-section YOLANDA -->
-    <!-- editor_page YOLANDA -->   
-</div>
 
 
 
     <section>
-<div class="right-column">
-        <div class="preview-cover">
-            <h2>Sin título</h2>
-            <h3>Sin subtitulo</h3>
-            <img src="" alt="Aqui ira la imagen de la plataforma PS5 predefinida">
-            <p>Aqui va la edad mínima siempre requerida</p>
-            <img src="" alt="Aqui ira la imagen de la compañia siempre electronics arts por defecto">
-        </div>
+        <div class="right-column">
+            <div class="preview-top">
+                <img src="" alt="Aqui ira la imagen de la plataforma PS5 predefinida">
+            </div>
+            <div class="cover-line"></div>
+            <div class="preview-cover js-preview-cover">
+                <h2 class="fantasy-title js-cover-title">Sin título</h2>
+                <!-- <h3>Sin subtitulo</h3> -->
+                 <div class="preview-bottom">
+                    <p>Aqui va la edad mínima siempre requerida</p>
+                    <img src="" alt="Aqui irá el logo de la compañia siempre electronics arts por defecto">
+                 </div>   
+            </div>
     </section>
-    <!-- editor_page YOLANDA -->
-</div>
-</main>  
+        <!-- editor_page YOLANDA -->
+    </div>
+    </main>  
 </body>
 </html>
