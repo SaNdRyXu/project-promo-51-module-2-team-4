@@ -30,7 +30,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding: 1rem;
+  padding: 0; /* para que el degradado de abajo toque los bordes*/
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   display: flex;
@@ -38,6 +38,7 @@ html, body {
   justify-content: space-between;
   color: white;
   text-align: left;
+
 }
 
 .cover-line {
@@ -67,5 +68,11 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  padding-bottom: 0rem;
+  background: linear-gradient(to top, rgba(0, 3, 0) 0%, rgba(0, 100, 0, 0) 100%); /*Degradado parte de abajo*/
 }
 
+.fantasy-title {
+  padding: 1rem;
+}
