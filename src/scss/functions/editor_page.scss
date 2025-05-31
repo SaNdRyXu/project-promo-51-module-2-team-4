@@ -35,14 +35,11 @@ html, body {
   background-position: center;
   position: relative;
   padding: 0; /* Matener para que el degradado de abajo toque los bordes*/
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
   text-align: left;
-
 }
 
 .cover-line {
@@ -61,9 +58,8 @@ html, body {
   align-items: center;
   justify-content: center;
   color: white;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
+
 .preview-top img {
   height: 100%; 
   object-fit: contain;

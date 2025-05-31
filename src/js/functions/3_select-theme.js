@@ -18,7 +18,7 @@ function updateTheme() {
         previewCover.style.backgroundImage = "url('/images/fantasy.png')";
         previewTitle.classList.add('fantasy-title');
     } else if (selectedTheme === 'Simulación') {
-        previewCover.style.backgroundImage = "url('/images/simulation.jpg')"; 
+        previewCover.style.backgroundImage = "url('/images/simulation_6.png')"; 
         previewTitle.classList.add('simulation-title');
     } else if (selectedTheme === 'Acción') {
         previewCover.style.backgroundImage = "url('/images/action.png')";
