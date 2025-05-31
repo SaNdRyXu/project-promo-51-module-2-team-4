@@ -37,43 +37,54 @@
             <select id="background-choice" name="background-choice">
                 <!-- <option value="" disabled selected>Elige la temática</option> -->
                 <option value="preset" selected>Prediseñado</option>
-                <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen -->
-            </select>
+                <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen.-->
+            </select> 
+
+
+            
             <!-- Input oculto para subir imagen -->
             <div id="custom-image-upload" class="hidden">
-                <label>Sube tu imagen:</label>
+                <span>Sube tu imagen</span>
+                <label class="upload-image">Sube tu imagen
                 <input type="file" id="custom-image" name="custom-image" accept="image/*" />
+                </label>
             </div>
                 <!-- 2_predesigned-or-submit -->
             
             <!-- 3_select-theme CLAUDIA-->
             <h2>Elige la temática que más te guste</h2>
 
-                <label><input type="radio" name="theme" value="Fantasía" checked>Fantasía </label>    
-                <label><input type="radio" name="theme" value="Terror">Terror </label>
-                <label><input type="radio" name="theme" value="Simulación">Simulación </label>
-                <label><input type="radio" name="theme" value="Acción">Acción </label>
+                <label><input type="radio" name="theme" value="Fantasía" checked><span>Fantasía</span></label>    
+                <label><input type="radio" name="theme" value="Terror"><span>Terror</span></label>
+                <label><input type="radio" name="theme" value="Simulación"><span>Simulación</span></label>
+                <label><input type="radio" name="theme" value="Acción"><span>Acción</span></label>
             <!-- 3_select-theme -->
             <!-- 4_input-title VANESSA -->
-            <h2>Título</h2>
-                <input type="text" id="title" name="title" placeholder="Escribe el título aquí">
+            <span class="section-fill">
+                <h2>Título</h2>
+                <input class="input-style" type="text" id="title" name="title" placeholder="Escribe el título aquí">
+            </span>
             <!-- 4_input-title VANESSA -->
 
             <!-- 5_input-subtitle CLAUDIA -->
+            <span class="section-fill">
             <h2>Subtítulo</h2>
-                <input type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
+                <input class="input-style" type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
+            </span>
             <!-- 5_input-subtitle CLAUDIA -->
             <!-- 6_select-platform SANDRA -->
             <h2>Plataforma</h2>
-                <label><input type="radio" name="platform" value="PS5" checked>PS5 </label>
-                <label><input type="radio" name="platform" value="PC">PC </label>
-                <label><input type="radio" name="platform" value="Xbox">Xbox </label>
-                <label><input type="radio" name="platform" value="Nintendo Switch">Nintendo Switch </label>
+                <input type="radio" name="platform" value="PS5" checked><label><span>PS5</span></label>
+                <input type="radio" name="platform" value="PC"><label><span>PC</span></label>
+                <input type="radio" name="platform" value="Xbox"><label><span>Xbox</span></label>
+                <input type="radio" name="platform" value="Nintendo Switch"><label><span>Nintendo Switch</span></label>
             <!-- 6_select-platform SANDRA -->
             <!--  7_input-age VANESSA -->
-            <h2>Edad</h2>
-                <label for="age">Recomendada (PEGI):</label>
-                <input type="number" id="age" name="age" min="3" max="18" step="1" value="7" required />
+            <span class="section-fill-age">
+            <h2>Edad Recomendada (PEGI)</h2>
+                <label for="age">
+                <input class="input-style" type="number" id="age" name="age" min="3" max="18" step="1" value="7" required /></label>
+            </span>
             <!--  7_input-age VANESSA -->
             
             <!-- 8_select-company-logo YOLANDA -->
@@ -92,6 +103,7 @@
             <!-- 8_select-company-logo CLAUDIA -->
             <div>            
                 <button class="js-9_save-button" type="submit" id="save-button">Guarda la carátula</button>
+                <a href="/index.html"><button class="return-button" type="submit" id="return">Volver atrás</button></a>
             </div>
             <!-- 
             
@@ -107,7 +119,7 @@
             <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i></a><!-- Twitch-->
             <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a><!-- Youtube-->
             <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i></a><!-- Discord-->
-            <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #171A21;"></i></a><!-- Steam-->
+            <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #ccc;"></i></a><!-- Steam-->
             <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i></a><!-- LinkedIn -->
         </div>
         <!-- 10_share-section YOLANDA -->
