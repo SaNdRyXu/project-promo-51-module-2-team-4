@@ -33,15 +33,16 @@
     <div class="left-column">
         <!-- 2_predesigned-or-submit VANESSA --> 
         <form action="">
-            <label class="background-choice">Fondo de carátula:</label>
-            <select id="background-choice" name="background-choice">
+            <div class="background-choice">
+                <label>Fondo de carátula:</label>
+    
+                <select id="background-choice" name="background-choice">
                 <!-- <option value="" disabled selected>Elige la temática</option> -->
                 <option value="preset" selected>Prediseñado</option>
                 <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen.-->
-            </select> 
-
-
-            
+                </select> 
+                
+            </div>            
             <!-- Input oculto para subir imagen -->
             <div id="custom-image-upload" class="hidden">
                 <span>Sube tu imagen</span>
@@ -68,8 +69,8 @@
 
             <!-- 5_input-subtitle CLAUDIA -->
             <span class="section-fill">
-            <h2>Subtítulo</h2>
-                <input class="input-style" type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
+                <h2>Subtítulo</h2>
+                <input class="input-style js-input-subtitle" type="text" id="subtitle" name="subtitle" placeholder="Escribe el subtítulo aquí">
             </span>
             <!-- 5_input-subtitle CLAUDIA -->
             <!-- 6_select-platform SANDRA -->
@@ -92,7 +93,7 @@
                 <h2>Compañía</h2>
 
                 <select class="js-company" id="company" name="company">
-                    <option name="company" value="ea" selected>Electronic Arts (EA)</option>
+                    <option name="company" value="ea" selected>Electronic Arts</option>
                     <option name="company" value="ubisoft">Ubisoft</option>
                     <option name="company" value="nintendo">Nintendo</option>
                     <option name="company" value="bethesda">Bethesda</option>
@@ -131,7 +132,10 @@
             </div>
             <div class="cover-line"></div>
             <div class="preview-cover js-preview-cover">
-                <h2 class="fantasy-title js-cover-title">Sin título</h2>
+                <div class="titles">
+                    <h2 class="fantasy-title js-cover-title">Sin título</h2>
+                    <h4 class="fantasy-subtitle js-cover-subtitle"></h4>
+                </div>
                 <!-- <h3>Sin subtitulo</h3> -->
                  <div class="preview-bottom">
                     <p>Aqui va la edad mínima siempre requerida</p>
