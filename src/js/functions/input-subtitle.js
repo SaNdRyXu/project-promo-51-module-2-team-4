@@ -1,7 +1,6 @@
 'use strict';
 
-const previewCoverSub = document.querySelector(".js-preview-cover");
-const previewSubtitleSub = previewCoverSub.querySelector('.js-cover-subtitle');
+const previewSubtitleSub = document.querySelector('.js-cover-subtitle');
 
 const themeOptionsSub = document.querySelectorAll('input[name="theme"]');
 const subtitleInput = document.querySelector('.js-input-subtitle');
