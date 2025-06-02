@@ -32,34 +32,42 @@
 <main class="main_editor"> 
     <div class="left-column">
         <!-- 2_predesigned-or-submit VANESSA --> 
+        <button class="return-button"><a href="index.html" id="return">Volver al inicio</a></button>
         <form action="">
-            <div class="background-choice">
-                <label>Fondo de carátula:</label>
-    
-                <select id="background-choice" name="background-choice">
-                <!-- <option value="" disabled selected>Elige la temática</option> -->
-                <option value="preset" selected>Prediseñado</option>
-                <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen.-->
-                </select> 
+            <section class="editor_background_design">
+                <h1>Diseña el fondo</h1>
+                <div class="background-choice">
+                    <label>Fondo de carátula:</label>
+                    
+                    <select id="background-choice" name="background-choice">
+                    <!-- <option value="" disabled selected>Elige la temática</option> -->
+                    <option value="preset" selected>Prediseñado</option>
+                    <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen.-->
+                    </select> 
                 
-            </div>            
-            <!-- Input oculto para subir imagen -->
-            <div id="custom-image-upload" class="hidden">
+                </div>            
+                <!-- Input oculto para subir imagen -->
+                <div id="custom-image-upload" class="hidden">
                 <span>Sube tu imagen</span>
                 <label class="upload-image">Sube tu imagen
                 <input type="file" id="custom-image" name="custom-image" accept="image/*" />
                 </label>
-            </div>
+                </div>
                 <!-- 2_predesigned-or-submit -->
             
-            <!-- 3_select-theme CLAUDIA-->
-            <h2>Elige la temática que más te guste</h2>
+                <!-- 3_select-theme CLAUDIA-->
+                <h2>Elige la temática que más te guste</h2>
 
                 <label><input type="radio" name="theme" value="Fantasía" checked><span>Fantasía</span></label>    
                 <label><input type="radio" name="theme" value="Terror"><span>Terror</span></label>
                 <label><input type="radio" name="theme" value="Simulación"><span>Simulación</span></label>
                 <label><input type="radio" name="theme" value="Acción"><span>Acción</span></label>
-            <!-- 3_select-theme -->
+                <!-- 3_select-theme -->
+            </section>
+            
+            <section>
+
+            </section>
             <!-- 4_input-title VANESSA -->
             <span class="section-fill">
                 <h2>Título</h2>
@@ -106,20 +114,10 @@
             
             <div>            
                 <button class="js-9_save-button" type="submit" id="save-button">Guarda la carátula</button>
-                <a href="/index.html"><button class="return-button" type="submit" id="return">Volver atrás</button></a>
+                <button>Reset</button>
             </div>
             
         </form>  
-        <!-- 10_share-section YOLANDA -->
-        <div class="share-section">
-            <h2>Comparte: </h2>
-            <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i></a><!-- Twitch-->
-            <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a><!-- Youtube-->
-            <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i></a><!-- Discord-->
-            <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #ccc;"></i></a><!-- Steam-->
-            <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i></a><!-- LinkedIn -->
-        </div>
-        <!-- 10_share-section YOLANDA -->
         <!-- editor_page YOLANDA -->   
     </div>
 
