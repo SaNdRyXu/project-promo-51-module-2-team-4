@@ -1,29 +1,173 @@
+@use '../core/_variables' as vars;
+
 * {
     box-sizing: border-box;
-    outline: 1px solid line;
 }
 html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    background-color: #010318; /*Mirar con Sandra si le va bien esto aquí!*/
+    color: white;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
 }
-.main {
+
+
+.main_editor {
     display: flex;
     width: 80vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    color: white;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .left-column {
     width: 50%;
 
 }
+
 .right-column {
  width: 30%;
  align-items: center;
 }
 
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.section-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.editor_background_design {
+  margin-bottom: 1rem;
+}
+
+
+
+/*SUBIR UNA IMAGEN: Oculto porque no deja personalizarlo*/
+
+// input[type="file"] {
+//   display:none;
+// }
+
+.hidden {
+  display: none;
+}
+
+// button, .upload-image  {
+//   background-color: vars.$color-main;
+//   padding: 0.5rem;
+//   border-radius: 1rem;
+//   border: 0;
+//   width: 10rem;
+//   margin: 1rem 0;
+//   cursor: pointer;
+//   color: black;
+// }
+
+button:hover, .upload-image:hover {
+  color: vars.$color-main;
+  background-color: vars.$color-secondary;
+}
+
+select, .input-style { /*Añado estilo al select y a los inputs para escribir a la vez*/
+  color: white;
+  background-color: #010318;
+  border: 0;
+  border-bottom: 0.2rem solid vars.$color-main;
+  width: 10rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+
+}
+
+a i { /*hago más grandes los iconos de la redes sociales*/
+  font-size: 3rem;
+  margin-right: 1rem;
+  
+}
+
+a i:hover {
+  color: vars.$color-secondary !important;
+}
+
+
+
+/*Para los RADIO BUTTONS no se puede hacer de manera fácil. Hay que ocultarlos y hacer este truco*/
+input[type="radio"]{
+  display: none; /* Oculto el radio */
+}
+
+  label span {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    background-color: vars.$color-main;
+    color: #010318;
+    min-width: 5rem;
+    text-align: center;
+}
+label span:hover {
+    background-color: vars.$color-secondary;
+    color: vars.$color-main; 
+}
+  
+  input:checked + span { /*Si el input está checked y inmediatamente después hay un SPAN, este se marca seleccionado*/
+    background-color: vars.$color-secondary;
+    color: vars.$color-main;
+  }
+
+
+  .section-fill {
+    display: flex;
+    margin-left: 1rem;
+
+    h2 {
+      width: 10rem;
+      margin-left: -1rem;
+    }
+  }
+
+  .section-fill-age {
+    display: flex;
+
+    .input-style {
+      margin-left: 1rem;
+      width: 5rem;
+      text-align: center;
+    }
+  }
+
+  
+  
+/*Botón de regreso a la página de Inicio*/
+.return-button {
+  background-color: gray;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
 
 /* PREVIEW COVER  */
 
@@ -44,9 +188,9 @@ html, body {
 
 .cover-line {
     border: none;
-    height: 1.3px; /* Grosor mínimo */
-    background-color: white; /* Color blanco */
-    width: 100%; /* O el ancho que prefieras */
+    height: 1.3px; 
+    background-color: white; 
+    width: 500px; 
 }
 .preview-top {
   /* background-color: #020f82; */
@@ -74,5 +218,65 @@ html, body {
 }
 
 .fantasy-title, .horror-title, .action-title, .simulation-title {
-  padding: 1rem;
+  margin: 0;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.company-section {
+  display: flex;
+  gap: 3rem;
+}
+
+.share-section {
+  display: flex;
+  margin-top: 1.6rem;
+  gap: 1rem;
+}
+
+
+@media all and (max-width:1200px) {
+
+.right-column-section, .preview-top, .cover-line {
+  width: 300px;
+}
+.preview-cover {
+  width: 300px;
+  height: 300px;
+}
+
+.horror-title, .action-title, .simulation-title, .fantasy-title {
+  font-size: 20px;
+}
+
+.cover-company {
+  width: 50px;
+}
+
+
+}
+
+@media all and (max-width:700px) {
+.main_editor {
+  display:block;
+  width: 100%;
+}
+.left-column, .right-column {
+  width: 100%;
+  margin: 0 1rem;
+}
+
+label span {
+    padding: 0.25rem;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+  min-width: 4rem;
+}
+.preview-cover {
+  margin-left: auto;
+  margin-right: auto;
+}
+.preview-top {
+  margin-top: 1rem;
+}
 }

@@ -24,7 +24,7 @@ function updateTheme() {
         previewCover.style.backgroundImage = "url('/images/action.png')";
         previewTitle.classList.add('action-title');
     } else if (selectedTheme === 'Terror') {
-        previewCover.style.backgroundImage = "url('/images/horror_2.jpg')";
+        previewCover.style.backgroundImage = "url('/images/horror_5.png')";
         previewTitle.classList.add('horror-title');
     }
 }
@@ -34,6 +34,7 @@ function updateTheme() {
 themeOptions.forEach(radio => {
   radio.addEventListener('change', updateTheme);
 });
+
 
 
 
