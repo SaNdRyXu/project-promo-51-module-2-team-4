@@ -10,6 +10,11 @@ import './functions/input-age.js';
 import './functions/select-company-logo.js';
 import './functions/save-button.js';
 import './functions/share-section.js';
+import './functions/reset-button.js';
+import './functions/dropdown.js';
+
+
+
 
 
 

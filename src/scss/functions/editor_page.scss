@@ -16,8 +16,6 @@ html, body {
 }
 
 
-
-
 .main_editor {
     display: flex;
     width: 80vw;
@@ -34,10 +32,35 @@ html, body {
     width: 50%;
 
 }
+
 .right-column {
  width: 30%;
  align-items: center;
 }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.section-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.editor_background_design {
+  margin-bottom: 1rem;
+}
+
+
 
 /*SUBIR UNA IMAGEN: Oculto porque no deja personalizarlo*/
 
@@ -141,6 +164,7 @@ label span:hover {
 .return-button {
   background-color: gray;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 /* PREVIEW COVER  */
