@@ -19,12 +19,11 @@ function toggleSection(activeBtn, activeSection, otherBtn, otherSection) {
 }
 
 
-
 // Inicio
-backgroundSection.classList.remove('hidden');
-fillSection.classList.add('hidden');
-designToggleBtn.textContent = '➖';
-fillToggleBtn.textContent = '➕';
+// backgroundSection.classList.remove('hidden');
+// fillSection.classList.add('hidden');
+// designToggleBtn.textContent = '➖';
+// fillToggleBtn.textContent = '➕';
 
 // Event listeners
 designToggleBtn.addEventListener('click', () => {
