@@ -49,6 +49,17 @@
                     <option value="custom">Imagen propia</option> <!-- // cuando sea imagen propia, se mostrará el input para subir imagen.-->
                     </select> 
 
+
+                      <!-- Input oculto para subir imagen -->
+                    <div id="custom-image-upload" class="hidden">
+                    <span>Sube tu imagen</span>
+                    <label class="upload-image">Sube tu imagen
+                    <input type="file" id="custom-image" name="custom-image" accept="image/*" />
+                    </label>
+                    </div>
+                <!-- 2_predesigned-or-submit -->
+            
+
                      <!-- 3_select-theme CLAUDIA-->
                     <h3>Elige la temática que más te guste</h3>
                     
@@ -59,15 +70,7 @@
                     <!-- 3_select-theme -->
                 
                 </div>            
-                <!-- Input oculto para subir imagen -->
-                <div id="custom-image-upload" class="hidden">
-                <span>Sube tu imagen</span>
-                <label class="upload-image">Sube tu imagen
-                <input type="file" id="custom-image" name="custom-image" accept="image/*" />
-                </label>
-                </div>
-                <!-- 2_predesigned-or-submit -->
-            
+              
                
             </section>
             
@@ -80,7 +83,7 @@
                     <!-- 4_input-title VANESSA -->
                 <span class="section-fill">
                     <h3>Título</h3>
-                    <input class="input-style" type="text" id="title" name="title" placeholder="Escribe el título aquí">
+                    <input class="input-style js-input-tittle" type="text" id="title" name="title" placeholder="Escribe el título aquí">
                 </span>
                 <!-- 4_input-title VANESSA -->
 
@@ -105,6 +108,7 @@
                 <h3>Edad Recomendada (PEGI)</h3>
                     <label for="age">
                     <input class="input-style" type="number" id="age" name="age" min="3" max="18" step="1" value="7" required /></label>
+                    <p class="js-display-age">7</p>
                 </span>
                 <!--  7_input-age VANESSA -->
             
@@ -154,7 +158,7 @@
                 </div>
                 <!-- <h3>Sin subtitulo</h3> -->
                  <div class="preview-bottom">
-                    <p>Aqui va la edad mínima siempre requerida</p>
+                    <p2 class="js-box">Aqui va la edad mínima siempre requerida</p>
                     <img class="cover-company js-cover-company" alt="Electronic Arts Inc." src="images/ea.svg" alt="Logo de la empresa desarroladora del videojuego">
                  </div>   
             </div>
