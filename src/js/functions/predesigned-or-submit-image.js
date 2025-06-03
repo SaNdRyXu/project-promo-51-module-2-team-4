@@ -1,6 +1,4 @@
 
-
-
 const backgroundSelect = document.querySelector('#background-choice');
 const customImageUpload = document.querySelector('#custom-image-upload');
 const fileInput = document.querySelector('#custom-image');
@@ -11,11 +9,16 @@ backgroundSelect.addEventListener('change', function () {
   const selectedValue = backgroundSelect.value;
 
   if (selectedValue === 'custom') {
-    customImageUpload.classList.remove('hidden'); // Mostrar
+    customImageUpload.classList.remove('hidden'); // Muestra input uploaded 
   } else {
-    customImageUpload.classList.add('hidden'); // Ocultar
+    customImageUpload.classList.add('hidden'); // Oculta input uploaded 
+
+    fileInput.value = ''; // Limpiar el fichero 
+
+    updateTheme(); // Vuelve a aplicar la temática seleccionada 
   }
 });
+
 
 
 fileInput.addEventListener("change", function () {

@@ -8,27 +8,37 @@ const previewTitle = previewCover.querySelector('.js-cover-title');
 const themeOptions = document.querySelectorAll('input[name="theme"]');
 
 function updateTheme() {
+  const selectedTheme = document.querySelector('input[name="theme"]:checked').value;
+  const backgroundChoice = document.querySelector('#background-choice').value;
 
-    const selectedTheme = document.querySelector('input[name="theme"]:checked').value;
+  // Només canviem l’estil del títol
+  previewTitle.classList.remove('fantasy-title', 'simulation-title', 'action-title', 'horror-title');
 
-    // Eliminamos todas las clases anteriores
-    previewTitle.classList.remove('fantasy-title', 'simulation-title', 'action-title', 'horror-title');
-
-    if (selectedTheme === 'Fantasía') {
-        previewCover.style.backgroundImage = "url('/images/fantasy.png')";
-        previewTitle.classList.add('fantasy-title');
-    } else if (selectedTheme === 'Simulación') {
-        previewCover.style.backgroundImage = "url('/images/simulation_6.png')"; 
-        previewTitle.classList.add('simulation-title');
-    } else if (selectedTheme === 'Acción') {
-        previewCover.style.backgroundImage = "url('/images/action.png')";
-        previewTitle.classList.add('action-title');
-    } else if (selectedTheme === 'Terror') {
-        previewCover.style.backgroundImage = "url('/images/horror_5.png')";
-        previewTitle.classList.add('horror-title');
+  if (selectedTheme === 'Fantasía') {
+    if (backgroundChoice !== 'custom') {
+      previewCover.style.backgroundImage = "url('/images/fantasy.png')";
     }
-}
+    previewTitle.classList.add('fantasy-title');
 
+  } else if (selectedTheme === 'Simulación') {
+    if (backgroundChoice !== 'custom') {
+      previewCover.style.backgroundImage = "url('/images/simulation_6.png')";
+    }
+    previewTitle.classList.add('simulation-title');
+
+  } else if (selectedTheme === 'Acción') {
+    if (backgroundChoice !== 'custom') {
+      previewCover.style.backgroundImage = "url('/images/action.png')";
+    }
+    previewTitle.classList.add('action-title');
+
+  } else if (selectedTheme === 'Terror') {
+    if (backgroundChoice !== 'custom') {
+      previewCover.style.backgroundImage = "url('/images/horror_5.png')";
+    }
+    previewTitle.classList.add('horror-title');
+  }
+}
 
 // Eventos
 themeOptions.forEach(radio => {
