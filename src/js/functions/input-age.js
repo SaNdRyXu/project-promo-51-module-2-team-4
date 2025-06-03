@@ -8,10 +8,10 @@ function pegi() {
   const age = parseInt(inputAge.value);
   boxAge.innerHTML = age;
 
-  boxAge.classList.remove('preview-age-rojo', 'preview-age-amarillo', 'preview-age');
+  boxAge.classList.remove('preview-age-rojo', 'preview-age-naranja', 'preview-age');
  
-  if (age > 7 && age < 18) {
-    boxAge.classList.add('preview-age-amarillo');
+  if (age >= 12 && age < 18) {
+    boxAge.classList.add('preview-age-naranja');
   } else if (age===18){boxAge.classList.add('preview-age-rojo');
     
   } else { boxAge.classList.add('preview-age')};
