@@ -195,14 +195,63 @@ label span:hover {
 .preview-top {
   /* background-color: #020f82; */
   background: linear-gradient(to right, #020f82, #3a53f0);
-  padding: 0.5rem;
-  height: 50px; 
+  padding: 0.6rem;
+  height: 60px; 
   width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
+
+.preview-xbox{
+  background: linear-gradient(to right, #00A94F, #9BC848, #50E136);
+  padding: 0.5rem;
+  height: 60px; 
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.preview-xbox img {
+  height: 100%; 
+  object-fit: contain;
+}
+
+.preview-pc{
+  background: linear-gradient(to right, #FFFFFF, #F0F0F0, #D9D9D9);
+  padding: 0.5rem;
+  height: 60px; 
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.preview-pc img {
+  height: 100%; 
+  object-fit: contain;
+}
+
+.preview-switch{
+  background: linear-gradient(to right, #E60012, #FFFFFF);
+  padding: 0.5rem;
+  height: 60px; 
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.preview-switch img {
+  height: 100%; 
+  object-fit: contain;
+}
+
 
 .preview-top img {
   height: 100%; 
