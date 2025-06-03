@@ -1,13 +1,23 @@
 
 
  const inputAge = document.querySelector('.js-input-age');
-  const boxAge = document.querySelector('.js-box-age');
+const boxAge = document.querySelector('.js-box');
 
-document.addEventListener('age', () => {
+
+function pegi() {
+  const age = parseInt(inputAge.value);
+  boxAge.innerHTML = age;
  
+  if (age > 7 && age < 18) {
+    boxAge.classList.add('preview-age-amarillo');
+  } else if (age===18){boxAge.classList.add('preview-age-rojo');
+    
+  } else { boxAge.classList.add (preview-age)};
+}
 
-  inputAge.addEventListener('input', () => {
-    const edad = inputAge.value;
-    boxAge.textContent = edad ? `Edad mínima: ${edad}` : 'Aquí va la edad mínima siempre requerida';
-  });
-});
+
+
+inputAge.addEventListener('input',pegi);
+
+
+  
