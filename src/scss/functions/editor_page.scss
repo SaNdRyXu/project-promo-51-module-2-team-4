@@ -283,6 +283,20 @@ label span:hover {
   gap: 1rem;
 }
 
+.return-button, .reset-button {
+  background: linear-gradient(to right, #00A94F, #9BC848);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.return-button:hover, .reset-button:hover {
+  background: linear-gradient(to right, #9BC848, #50E136);
+}
+
 
 @media all and (max-width:1200px) {
 
@@ -328,4 +342,9 @@ label span {
 .preview-top {
   margin-top: 1rem;
 }
+.preview-xbox, .preview-pc, .preview-switch {
+  margin-top: 1rem;
 }
+
+}
+
