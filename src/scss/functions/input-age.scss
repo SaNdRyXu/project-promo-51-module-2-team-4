@@ -15,34 +15,21 @@
 
 /* Colors específics */
 .preview-age {
-  background-color: rgb(40, 190, 13); 
+
+    background-color: rgb(131, 255, 16);
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
+    text-align: center;
+    border-color: beige;
+    border-radius: 1%;
 }
 
-.preview-age-naranja {
-  background-color: rgb(228, 98, 6); 
+.preview-age-amarillo {
+    background-color: yellow;
 }
 
 .preview-age-rojo {
-  background-color: rgb(233, 47, 47); 
-}
-
-
-@media (max-width: 600px) {
-  .preview-age,
-  .preview-age-naranja,
-  .preview-age-rojo {
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .preview-age,
-  .preview-age-naranja,
-  .preview-age-rojo {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.2rem;
-  }
+    background-color: rgb(233, 47, 47);
+        
 }

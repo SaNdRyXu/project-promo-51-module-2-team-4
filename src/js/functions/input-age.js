@@ -14,6 +14,7 @@ function pegi() {
     boxAge.innerHTML = '7';
     boxAge.classList.add('preview-age');
   }
+  boxAge.classList.remove("preview-age-amarillo","preview-age-rojo","preview-age");
  
   else if (age >= 12 && age < 18) {
     boxAge.classList.add('preview-age-naranja');
