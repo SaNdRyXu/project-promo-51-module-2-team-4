@@ -31,3 +31,11 @@
     color: white;
 }
 
+
+@media all and (max-width:1200px) {
+    .fantasy-subtitle, .horror-subtitle, .action-subtitle, .simulation-subtitle {
+        font-size: 12px;
+        padding-left: 1rem;
+    }
+}
+
