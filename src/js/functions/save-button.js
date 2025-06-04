@@ -1,4 +1,5 @@
 const saveButton = document.querySelector('.js-save-button');
+const preLink = document.querySelector('.js-prelink');
 
 function sendData() {
   const title = document.querySelector('#title').value.trim() || 'Sin título';
@@ -71,6 +72,7 @@ function sendData() {
         const resultUrl = `result.html?id=${data.infoID}`;
         // Pintar la URL en el <p> final
         const resultParagraph = document.querySelector('.js-url-result');
+        preLink.classList.remove('hidden');
         resultParagraph.innerHTML = `<a href="${resultUrl}" target="_blank">${resultUrl}</a>`;
       } else {
         console.error('Error en la respuesta del servidor:', data.error);
