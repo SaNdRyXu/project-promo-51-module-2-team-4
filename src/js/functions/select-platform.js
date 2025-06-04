@@ -10,16 +10,16 @@ function updatePlatform() {
     const previewimagePlatform = document.getElementById('previewimagePlatform');
 
     previewTop.className = "preview-top"; 
-    previewimagePlatform.src = "images/ps5.png";
+    previewimagePlatform.src = "images/ps5.svg";
     previewimagePlatform.alt = "Imagen de PS5";
     
 
     if (selectedPlatform === "PS5") {
-        previewimagePlatform.src = "images/ps5.png";
+        previewimagePlatform.src = "images/ps5.svg";
         previewimagePlatform.alt = "Imagen de PS5";
 
     } else if (selectedPlatform === "PC") {
-        previewimagePlatform.src = "images/pc.png";
+        previewimagePlatform.src = "images/pc.svg";
         previewimagePlatform.alt = "Imagen de PC";
         previewTop.className ="preview-pc";
     } else if (selectedPlatform === "Xbox") {
