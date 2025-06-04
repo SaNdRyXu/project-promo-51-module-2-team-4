@@ -9,6 +9,7 @@ function sendData() {
   const backgroundChoice = document.querySelector('#background-choice').value || 'preset'; // 'custom' o 'preset'
   const uploadedImage = document.querySelector('.js-preview-cover').style.backgroundImage; // background-image: url("data:image/...")
   const themeValue = document.querySelector('input[name="theme"]:checked')?.value || 'Fantasía'; // Valor de la temática seleccionada
+  
 
   const formData = {
     field1: parseInt(backgroundChoice === 'custom' ? 1 : 2),                   
@@ -84,3 +85,15 @@ saveButton.addEventListener('click', function (event) {
   event.preventDefault(); // Evita recarga formulario
   sendData();
 });
+
+// Exportar la función para usarla en otros módulos
+const storedData = JSON.parse(localStorage.getItem('formData'));
+if (storedData) {
+  const params = new URLSearchParams(storedData).toString();
+  const resultUrl = `result.html?${params}`;
+
+  // Pintar el enlace en la primera página
+  const resultParagraph = document.querySelector('.js-url-result');
+  resultParagraph.innerHTML = `<a href="${resultUrl}" target="_blank">Ver resultados</a>`;
+}
+
