@@ -142,7 +142,6 @@ label span:hover {
 
   .section-fill {
     display: flex;
-    margin-left: 1rem;
 
     h2 {
       width: 10rem;
@@ -166,6 +165,7 @@ label span:hover {
 .return-button, .reset-button {
   
   margin-bottom: 1rem;
+  margin-top: 1rem;
   background: linear-gradient(to right, #020f82, #3a53f0);
   color: white;
   padding: 0.6rem 1.2rem;
@@ -195,7 +195,7 @@ label span:hover {
 .preview-cover {
   width: 500px;
   height: 500px; /* 1:1 ratio */
-  background-size: contain;       
+  background-size: cover;       
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -330,8 +330,11 @@ label span:hover {
 
 @media all and (max-width:1200px) {
 
-.right-column-section, .preview-top, .cover-line {
+.right-column-section, .cover-line, .preview-top, .preview-pc, .preview-xbox, .preview-switch .cover-line {
   width: 300px;
+}
+.left-column {
+  margin-right: 1rem;
 }
 .preview-cover {
   width: 300px;
@@ -351,12 +354,11 @@ label span:hover {
 
 @media all and (max-width:700px) {
 .main_editor {
-  display:block;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .left-column, .right-column {
   width: 100%;
-  margin: 0 1rem;
 }
 
 label span {
