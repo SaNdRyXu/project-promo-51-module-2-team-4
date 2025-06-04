@@ -9,17 +9,22 @@ function pegi() {
   boxAge.innerHTML = age;
 
   boxAge.classList.remove('preview-age-rojo', 'preview-age-naranja', 'preview-age');
+
+  if (isNaN(age) || age < 3 || age > 18) {
+    boxAge.innerHTML = '7';
+    boxAge.classList.add('preview-age');
+  }
  
-  if (age >= 12 && age < 18) {
+  else if (age >= 12 && age < 18) {
     boxAge.classList.add('preview-age-naranja');
   } else if (age===18){boxAge.classList.add('preview-age-rojo');
     
   } else { boxAge.classList.add('preview-age')};
 }
 
+  
 
-
-inputAge.addEventListener('input',pegi);
+  inputAge.addEventListener('input',pegi);
 
 
   
