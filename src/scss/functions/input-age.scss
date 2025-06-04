@@ -1,35 +1,54 @@
-/* Classe base amb estils comuns */
+
 .preview-age,
 .preview-age-naranja,
-.preview-age-rojo {
-  width: 3rem;
-  height: 3rem;
-  font-size: 2rem;
+.preview-age-rojo,
+.preview-age-amarillo {
+  width: 70px;
+  height: 70px;
+  font-size: 45px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 10%; 
 }
 
-/* Colors específics */
 .preview-age {
-
-    background-color: rgb(131, 255, 16);
-    width: 70px;
-    height: 70px;
-    font-size: 45px;
-    text-align: center;
-    border-color: beige;
-    border-radius: 1%;
+  background-color: rgb(131, 255, 16);
 }
 
-.preview-age-amarillo {
-    background-color: yellow;
+.preview-age-naranja {
+  background-color: rgb(228, 98, 6);
 }
 
 .preview-age-rojo {
-    background-color: rgb(233, 47, 47);
-        
+  background-color: rgb(233, 47, 47);
+}
+
+.preview-age-amarillo {
+  background-color: rgb(255, 196, 0);
+}
+
+
+@media (max-width: 600px) {
+  .preview-age,
+  .preview-age-naranja,
+  .preview-age-rojo,
+  .preview-age-amarillo {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .preview-age,
+  .preview-age-naranja,
+  .preview-age-rojo,
+  .preview-age-amarillo {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
 }
