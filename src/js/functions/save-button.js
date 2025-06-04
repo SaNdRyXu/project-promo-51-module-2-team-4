@@ -66,7 +66,11 @@ function sendData() {
       if (data.success) {
         console.log('Respuesta del servidor:', data);
         localStorage.setItem('apiData', JSON.stringify(data));
-        // window.location.href = 'result.html'; // Redirige a la página de resultados
+        // Crear URL con el ID
+        const resultUrl = `result.html?id=${data.infoID}`;
+        // Pintar la URL en el <p> final
+        const resultParagraph = document.querySelector('.js-url-result');
+        resultParagraph.innerHTML = `<a href="${resultUrl}" target="_blank">${resultUrl}</a>`;
       } else {
         console.error('Error en la respuesta del servidor:', data.error);
       }
