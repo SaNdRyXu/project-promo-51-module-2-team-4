@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    background-color: #010318; /*Mirar con Sandra si le va bien esto aquí!*/
+    background-color: #010318; 
     color: white;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
@@ -62,31 +62,36 @@ html, body {
 
 
 
-/*SUBIR UNA IMAGEN: Oculto porque no deja personalizarlo*/
 
-// input[type="file"] {
-//   display:none;
-// }
 
 .hidden {
   display: none;
 }
-
-// button, .upload-image  {
-//   background-color: vars.$color-main;
-//   padding: 0.5rem;
-//   border-radius: 1rem;
-//   border: 0;
-//   width: 10rem;
-//   margin: 1rem 0;
-//   cursor: pointer;
-//   color: black;
-// }
-
-button:hover, .upload-image:hover {
-  color: vars.$color-main;
-  background-color: vars.$color-secondary;
+.editor-span{
+  margin-bottom: 10px;
+  display: block;
 }
+
+#custom-image::-webkit-file-upload-button {
+    background-color: #edd116; 
+    color: black; 
+    font-size: 16px;
+    font-family: "Didact Gothic", sans-serif;
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    
+}
+
+#custom-image::-webkit-file-upload-button:hover {
+    background-color: #0c03fa; 
+    color: white; 
+}
+
+
+
 
 select, .input-style { /*Añado estilo al select y a los inputs para escribir a la vez*/
   color: white;
@@ -98,6 +103,10 @@ select, .input-style { /*Añado estilo al select y a los inputs para escribir a 
   padding: 0.5rem;
 
 }
+
+
+
+
 
 a i { /*hago más grandes los iconos de la redes sociales*/
   font-size: 3rem;
@@ -284,7 +293,7 @@ label span:hover {
   align-items: center;
   padding: 1rem;
   padding-bottom: 0rem;
-  background: linear-gradient(to top, rgba(0, 3, 0) 0%, rgba(0, 100, 0, 0) 100%); /*Degradado parte de abajo*/
+  background: linear-gradient(to top, rgba(0, 3, 0) 0%, rgba(0, 100, 0, 0) 100%); 
 }
 
 .fantasy-title, .horror-title, .action-title, .simulation-title {
