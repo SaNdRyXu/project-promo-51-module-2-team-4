@@ -18,8 +18,8 @@ function sendData() {
     field3: subtitle,                                  // Subtítulo
     field4: themeValue,                                // Temática
     field5: ageValue,                                  // Edad recomendada
-    field6: platformValue ? `images/${platformValue.toLowerCase()}.svg` : '',
-    field7: companyValue ? `images/${companyValue.toLowerCase()}.svg` : '',
+    field6: platformValue ? `/public/images/${platformValue.toLowerCase()}.svg` : '',
+    field7: companyValue ? `/public/images/${companyValue.toLowerCase()}.svg` : '',
 
   };
 
@@ -38,19 +38,19 @@ function sendData() {
     // Imagen preset según temática
     switch (themeValue) {
       case 'Fantasía':
-        formData.photo = 'images/fantasy.png';
+        formData.photo = '/public/images/fantasy.png';
         break;
       case 'Simulación':
-        formData.photo = 'images/simulation_6.png';
+        formData.photo = '/public/images/simulation_6.png';
         break;
       case 'Acción':
-        formData.photo = 'images/action.png';
+        formData.photo = '/public/images/action.png';
         break;
       case 'Terror':
-        formData.photo = 'images/horror_5.png';
+        formData.photo = '/public/images/horror_5.png';
         break;
       default:
-        formData.photo = 'images/fantasy.png';
+        formData.photo = '/public/images/fantasy.png';
     }
   }
 
