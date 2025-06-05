@@ -10,7 +10,7 @@ export default defineConfig({
   // publicDir: "../public",  // <-- comentat, ja que public està a dins el projecte
   build: {
     minify: "esbuild",
-    outDir: "../docs",
+    outDir: "docs",
     sourcemap: "inline",
     emptyOutDir: true,
     rollupOptions: {
