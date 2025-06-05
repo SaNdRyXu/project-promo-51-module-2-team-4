@@ -12,7 +12,7 @@ if (id) {
       if (data.success) {
         const card = data.data;
 
-        console.log('Dades rebudes:', card);
+        console.log('Datos recibidos:', card);
 
         // ELEMENTS
         const titleElement = document.querySelector('.js-cover-title');
@@ -22,18 +22,18 @@ if (id) {
         const companyImg = document.querySelector('.js-cover-company');
         const boxAge = document.querySelector('.js-box');
 
-        // TÍTOL
+        // Título
         const title = card.field2;
         titleElement.textContent = title && title.toLowerCase() !== 'sin título' ? title : '';
 
-        // SUBTÍTOL
+        // Subtítulo
         const subtitle = card.field3.toUpperCase();
         subtitleElement.textContent = subtitle && subtitle.toLowerCase() !== 'sin subtítulo' ? subtitle : '';
 
-        // TEMÀTICA
+        // TEMÁTICA
         const theme = card.field4?.toLowerCase(); // 'fantasía', 'acción', etc.
 
-        // Estils títol
+        // Estilos título
         titleElement.classList.remove('fantasy-title', 'simulation-title', 'action-title', 'horror-title');
         if (theme === 'fantasía') {
           titleElement.classList.add('fantasy-title');
@@ -45,7 +45,7 @@ if (id) {
           titleElement.classList.add('horror-title');
         }
 
-        // Estils subtítol (només si hi ha text)
+        // Estilos subtítulo 
         subtitleElement.classList.remove('fantasy-subtitle', 'simulation-subtitle', 'action-subtitle', 'horror-subtitle');
         if (subtitle && subtitle.toLowerCase() !== 'sin subtítulo') {
           if (theme === 'fantasía') {
@@ -86,10 +86,8 @@ if (id) {
         if (platformImg && card.field6) {
           platformImg.src = card.field6;
         
-          // 🎯 Afegeix això dins del bloc:
           const previewTop = document.getElementById('previewTop');
         
-          // Netegem possibles classes anteriors
           previewTop.classList.remove('preview-pc', 'preview-xbox', 'preview-switch');
         
           const platformUrl = card.field6.toLowerCase();
@@ -104,12 +102,12 @@ if (id) {
         }
 
 
-        // COMPANYIA
+        // COMPAÑÍA
         if (companyImg && card.field7) {
           companyImg.src = card.field7;
         }
 
-        // FONS DE CARÀTULA
+        // FONDO
         if (cover && card.photo) {
           cover.style.backgroundImage = `url("${card.photo}")`;
         }
@@ -122,7 +120,7 @@ if (id) {
       console.error('Error en el fetch GET:', err);
     });
 } else {
-  console.log('No s’ha trobat cap ID a la URL.');
+  console.log('No se ha encontrado ningún id en la URL.');
 }
 
 
