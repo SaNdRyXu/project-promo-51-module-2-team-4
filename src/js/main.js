@@ -12,6 +12,7 @@ import './functions/save-button.js';
 import './functions/share-section.js';
 import './functions/reset-button.js';
 import './functions/dropdown.js';
+import './functions/result.js';
 
 
 

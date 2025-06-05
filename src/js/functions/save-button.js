@@ -88,14 +88,3 @@ saveButton.addEventListener('click', function (event) {
   sendData();
 });
 
-// Exportar la función para usarla en otros módulos
-const storedData = JSON.parse(localStorage.getItem('formData'));
-if (storedData) {
-  const params = new URLSearchParams(storedData).toString();
-  const resultUrl = `result.html?${params}`;
-
-  // Pintar el enlace en la primera página
-  const resultParagraph = document.querySelector('.js-url-result');
-  resultParagraph.innerHTML = `<a href="${resultUrl}" target="_blank">Ver resultados</a>`;
-}
-
