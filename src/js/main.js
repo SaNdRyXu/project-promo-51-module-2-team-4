@@ -1,4 +1,4 @@
-// import '../scss/main.scss';
+import '../scss/main.scss';
 
 import './functions/home-button.js';
 import './functions/predesigned-or-submit-image.js';
@@ -12,7 +12,7 @@ import './functions/save-button.js';
 import './functions/share-section.js';
 import './functions/reset-button.js';
 import './functions/dropdown.js';
-import './functions/result.js';
+// import './functions/result.js';
 
 
 

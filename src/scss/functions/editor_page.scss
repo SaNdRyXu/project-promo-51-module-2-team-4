@@ -258,7 +258,7 @@ label span:hover {
 }
 
 .preview-switch{
-  background: linear-gradient(to right, #E60012, #FFFFFF);
+  background: linear-gradient(to right, #E60012, #b84a4a);
   padding: 0.5rem;
   height: 60px; 
   width: 500px;
@@ -331,7 +331,7 @@ label span:hover {
 
 @media all and (max-width:1200px) {
 
-.right-column-section, .cover-line, .preview-top, .preview-pc, .preview-xbox, .preview-switch .cover-line {
+.right-column-section, .cover-line, .preview-top, .preview-pc, .preview-xbox, .preview-switch, .cover-line {
   width: 300px;
 }
 .left-column {
