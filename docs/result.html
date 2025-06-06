@@ -3,39 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <title>Resultado Final</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Cinzel:wght@400..900&family=MedievalSharp&family=Patrick+Hand&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&family=MedievalSharp&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&family=Pirata+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/favicon.png">
-    
-    <script type="module" crossorigin src="./assets/main-6b10fe5e.js"></script>
-    <script type="module" crossorigin src="./js/main.js"></script>
-    <link rel="stylesheet" href="./assets/main-36a29b6b.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <script type="module" src="/js/main.js" defer></script> -->
+     
+
+    <script type="module" crossorigin src="./result.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="./assets/main-9c70593c.css">
   </head>
-  <body>
+  <body class="result-body">
+    <div class="result-view">
+      <div id="previewTop" class="preview-top">
+          <img id="previewimagePlatform" class="js-imgrightbutton ">
+      </div>
+      <div class="cover-line"></div>
+      <div class="preview-cover js-preview-cover">
+          <div class="titles">
+            <h2 class="fantasy-title js-cover-title"></h2>
+            <h4 class="fantasy-subtitle js-cover-subtitle"></h4>
+          </div>
+          <div class="preview-bottom">
+            <p class="preview-age js-box">7</p>
+            <img class="cover-company js-cover-company" >
+          </div>   
+      </div>
+    </div>
+    
+
+
+
 
     <div class="share-section">
-            <h2>Comparte: </h2>
-            <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i></a><!-- Twitch-->
-            <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a><!-- Youtube-->
-            <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i></a><!-- Discord-->
-            <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #ccc;"></i></a><!-- Steam-->
-            <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i></a><!-- LinkedIn -->
+        <h2>Comparte: </h2>
+        <div>
+          <a href="https://www.twitch.tv/" id="start-button" target="_blank"><i class="fa-brands fa-twitch" style="color: #9146FF;"></i></a><!-- Twitch-->
+          <a href="https://www.youtube.com/?app=desktop&hl=es" id="start-button" target="_blank"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i></a><!-- Youtube-->
+          <a href="https://discord.com/" id="start-button" target="_blank"><i class="fa-brands fa-discord" style="color: #5865F2;"></i></a><!-- Discord-->
+          <a href="https://store.steampowered.com/?l=spanish" id="start-button" target="_blank"><i class="fa-brands fa-steam" style="color: #ccc;"></i></a><!-- Steam-->
+          <a href="https://www.linkedin.com/" id="start-button" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077B5;"></i></a><!-- LinkedIn -->
         </div>
-        <!-- 10_share-section YOLANDA -->
-
-      
-        <div class="result-header">
-          <div class="resultplatform-logo-container">
-            <img class="js-resultplatform-logo resultplatform-logo" alt="Logo de plataforma">
-          </div>
-          
-          <h1 class="js-resultitle resultitle"></h1>
-          <h2 class="js-resultsubtitle resultsubtitle"></h2>
-          <p class="js-resultage resultage"></p>
-          <p class="js-resultheme resultheme"></p>
-          <img class="js-resultcompany-logo resultcompany-logo" alt="Logo de empresa">
-          <img class="js-resultpreview-image resultpreview-image" alt="Imagen de fondo">
-        </div>
-
-      <script src="/js/functions/result.js" defer></script>
+        
+    </div>
   </body>
 </html>
