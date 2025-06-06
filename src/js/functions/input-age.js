@@ -6,7 +6,7 @@ function pegi() {
   const age = parseInt(inputAge.value);
   boxAge.innerHTML = age;
 
-  // Quitamos todas las clases de estilos antes de evaluar
+  
   boxAge.classList.remove('preview-age-rojo', 'preview-age-naranja', 'preview-age-amarillo', 'preview-age');
 
   if (isNaN(age) || age < 3 || age > 18) {

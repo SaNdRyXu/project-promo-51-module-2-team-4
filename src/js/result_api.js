@@ -14,7 +14,7 @@ if (id) {
 
         console.log('Datos recibidos:', card);
 
-        // ELEMENTS
+        
         const titleElement = document.querySelector('.js-cover-title');
         const subtitleElement = document.querySelector('.js-cover-subtitle');
         const cover = document.querySelector('.js-preview-cover');
@@ -22,18 +22,18 @@ if (id) {
         const companyImg = document.querySelector('.js-cover-company');
         const boxAge = document.querySelector('.js-box');
 
-        // Título
+       
         const title = card.field2;
         titleElement.textContent = title && title.toLowerCase() !== 'sin título' ? title : '';
 
-        // Subtítulo
+        
         const subtitle = card.field3.toUpperCase();
         subtitleElement.textContent = subtitle && subtitle.toLowerCase() !== 'sin subtítulo' ? subtitle : '';
 
-        // TEMÁTICA
-        const theme = card.field4?.toLowerCase(); // 'fantasía', 'acción', etc.
+        
+        const theme = card.field4?.toLowerCase(); 
 
-        // Estilos título
+     
         titleElement.classList.remove('fantasy-title', 'simulation-title', 'action-title', 'horror-title');
         if (theme === 'fantasía') {
           titleElement.classList.add('fantasy-title');
@@ -45,7 +45,7 @@ if (id) {
           titleElement.classList.add('horror-title');
         }
 
-        // Estilos subtítulo 
+       
         subtitleElement.classList.remove('fantasy-subtitle', 'simulation-subtitle', 'action-subtitle', 'horror-subtitle');
         if (subtitle && subtitle.toLowerCase() !== 'sin subtítulo') {
           if (theme === 'fantasía') {
@@ -60,7 +60,7 @@ if (id) {
         }
 
         
-        // Edad recomendada
+       
         boxAge.textContent = card.field5 || '7';
         const age = parseInt(card.field5);
 
@@ -82,7 +82,7 @@ if (id) {
         }
 
 
-        // Plataforma 
+       
         if (platformImg && card.field6) {
           platformImg.src = card.field6;
         
@@ -102,12 +102,12 @@ if (id) {
         }
 
 
-        // COMPAÑÍA
+       
         if (companyImg && card.field7) {
           companyImg.src = card.field7;
         }
 
-        // FONDO
+        
         if (cover && card.photo) {
           cover.style.backgroundImage = `url("${card.photo}")`;
         }

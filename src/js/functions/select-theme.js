@@ -11,7 +11,7 @@ function updateTheme() {
   const selectedTheme = document.querySelector('input[name="theme"]:checked').value;
   const backgroundChoice = document.querySelector('#background-choice').value;
 
-  // Només canviem l’estil del títol
+  
   previewTitle.classList.remove('fantasy-title', 'simulation-title', 'action-title', 'horror-title');
 
   if (selectedTheme === 'Fantasía') {
@@ -40,7 +40,7 @@ function updateTheme() {
   }
 }
 
-// Eventos
+
 themeOptions.forEach(radio => {
   radio.addEventListener('change', updateTheme);
 });

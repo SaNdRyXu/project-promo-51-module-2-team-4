@@ -33,11 +33,11 @@ function updatePlatform() {
     }
 }
 
-// Eventos
+
 platformOptions.forEach(radio => {
      
     radio.addEventListener('change', updatePlatform);
 });
 
-// Inicializar con la opción por defecto
+
 updatePlatform();

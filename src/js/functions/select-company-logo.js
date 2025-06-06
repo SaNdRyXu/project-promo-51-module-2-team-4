@@ -3,7 +3,7 @@
 const selectCompany = document.querySelector('.js-company');
 const previewCompanyLogo = document.querySelector('.js-cover-company');
 
-//Functions 
+
 function companySelected(){
   if (selectCompany.value === "ubisoft") {
     previewCompanyLogo.src = "/project-promo-51-module-2-team-4/images/ubisoft.svg";
@@ -25,7 +25,7 @@ function companySelected(){
     previewCompanyLogo.alt = "Electronic Arts Inc.";
   }
 }
-//Events
+
 selectCompany.addEventListener('change', companySelected);
 
 

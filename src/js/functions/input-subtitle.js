@@ -9,12 +9,12 @@ function updateSubtitle() {
   const text = subtitleInput.value.trim();
   previewSubtitleSub.textContent = text;
 
-  // Eliminar clases de subtítulo
+ 
   previewSubtitleSub.classList.remove('fantasy-subtitle', 'action-subtitle', 'simulation-subtitle', 'horror-subtitle');
 
-  if (!text) return; // si no hay ningún texto, paramos aquí la función 
+  if (!text) return; 
 
-  // temática seleccionada
+ 
   const selectedTheme = document.querySelector('input[name="theme"]:checked').value;
 
   if (selectedTheme === 'Fantasía') {
@@ -28,7 +28,6 @@ function updateSubtitle() {
   }
 }
 
-// Eventos
 subtitleInput.addEventListener('input', updateSubtitle);
 themeOptionsSub.forEach(radio => {
   radio.addEventListener('change', updateSubtitle);

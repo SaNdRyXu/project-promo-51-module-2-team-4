@@ -93,7 +93,7 @@ html, body {
 
 
 
-select, .input-style { /*Añado estilo al select y a los inputs para escribir a la vez*/
+select, .input-style { 
   color: white;
   background-color: #010318;
   border: 0;
@@ -108,7 +108,7 @@ select, .input-style { /*Añado estilo al select y a los inputs para escribir a 
 
 
 
-a i { /*hago más grandes los iconos de la redes sociales*/
+a i { 
   font-size: 3rem;
   margin-right: 1rem;
   
@@ -120,9 +120,9 @@ a i:hover {
 
 
 
-/*Para los RADIO BUTTONS no se puede hacer de manera fácil. Hay que ocultarlos y hacer este truco*/
+
 input[type="radio"]{
-  display: none; /* Oculto el radio */
+  display: none; 
 }
 
   label span {
@@ -143,7 +143,7 @@ label span:hover {
     color: vars.$color-main; 
 }
   
-  input:checked + span { /*Si el input está checked y inmediatamente después hay un SPAN, este se marca seleccionado*/
+  input:checked + span { 
     background-color: vars.$color-secondary;
     color: vars.$color-main;
   }
@@ -170,7 +170,6 @@ label span:hover {
 
   
   
-/*Botón de regreso a la página de Inicio y Reset*/
 .return-button, .reset-button {
   
   margin-bottom: 1rem;
@@ -199,16 +198,16 @@ label span:hover {
   font-family: "Didact Gothic", sans-serif;
 }
 
-/* PREVIEW COVER  */
+
 
 .preview-cover {
   width: 500px;
-  height: 500px; /* 1:1 ratio */
+  height: 500px;
   background-size: cover;       
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  padding: 0; /* Matener para que el degradado de abajo toque los bordes*/
+  padding: 0; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,7 +222,7 @@ label span:hover {
     width: 500px; 
 }
 .preview-top {
-  /* background-color: #020f82; */
+  
   background: linear-gradient(to right, #020f82, #3a53f0);
   padding: 0.6rem;
   height: 60px; 
