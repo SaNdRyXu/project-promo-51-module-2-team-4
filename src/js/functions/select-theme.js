@@ -1,7 +1,7 @@
 'use strict';
 
 const previewCover = document.querySelector(".js-preview-cover");
-previewCover.style.backgroundImage = "url('/images/fantasy.png')";
+previewCover.style.backgroundImage = "url('public/images/fantasy.png')";
 
 const previewTitle = previewCover.querySelector('.js-cover-title');
 
@@ -16,25 +16,25 @@ function updateTheme() {
 
   if (selectedTheme === 'Fantasía') {
     if (backgroundChoice !== 'custom') {
-      previewCover.style.backgroundImage = "url('/images/fantasy.png')";
+      previewCover.style.backgroundImage = "url('/public/images/fantasy.png')";
     }
     previewTitle.classList.add('fantasy-title');
 
   } else if (selectedTheme === 'Simulación') {
     if (backgroundChoice !== 'custom') {
-      previewCover.style.backgroundImage = "url('/images/simulation_6.png')";
+      previewCover.style.backgroundImage = "url('/public/images/simulation_6.png')";
     }
     previewTitle.classList.add('simulation-title');
 
   } else if (selectedTheme === 'Acción') {
     if (backgroundChoice !== 'custom') {
-      previewCover.style.backgroundImage = "url('/images/action.png')";
+      previewCover.style.backgroundImage = "url('/public/images/action.png')";
     }
     previewTitle.classList.add('action-title');
 
   } else if (selectedTheme === 'Terror') {
     if (backgroundChoice !== 'custom') {
-      previewCover.style.backgroundImage = "url('/images/horror_5.png')";
+      previewCover.style.backgroundImage = "url('/public/images/horror_5.png')";
     }
     previewTitle.classList.add('horror-title');
   }
