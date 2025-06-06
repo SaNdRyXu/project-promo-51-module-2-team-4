@@ -31,7 +31,7 @@ const inputFilesList = {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/project-promo-51-module-2-team-4/",
   root: "src",
   publicDir: "../public",
   build: {
